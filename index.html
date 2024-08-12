@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Recommendations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Anime Recommendations</h1>
+        <div class="gallery">
+            <div class="anime" onclick="showDescription('anime1')">
+                <img src="anime1.jpg" alt="Anime 1">
+                <h2>Anime Title 1</h2>
+            </div>
+            <div class="anime" onclick="showDescription('anime2')">
+                <img src="anime2.jpg" alt="Anime 2">
+                <h2>Anime Title 2</h2>
+            </div>
+            <!-- Tambahkan lebih banyak anime sesuai kebutuhan -->
+        </div>
+    </div>
+
+    <div id="description" class="description">
+        <span onclick="hideDescription()" class="close">&times;</span>
+        <div id="anime1" class="desc-content">
+            <h2>Anime Title 1</h2>
+            <p>This is a description of Anime 1.</p>
+        </div>
+        <div id="anime2" class="desc-content">
+            <h2>Anime Title 2</h2>
+            <p>This is a description of Anime 2.</p>
+        </div>
+        <!-- Tambahkan lebih banyak deskripsi sesuai kebutuhan -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
